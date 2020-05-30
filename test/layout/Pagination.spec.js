@@ -32,7 +32,10 @@ describe('Pagination', () => {
     const image = await page.screenshot();
 
     // Vergleichen mit Referenz
-    expect(image).toMatchImageSnapshot();
+    expect(image).toMatchImageSnapshot({
+      failureThreshold: '0.01',
+      failureThresholdType: 'percent',
+    });
   });
 
   test('layout middle page is correct', async () => {
@@ -45,7 +48,10 @@ describe('Pagination', () => {
     const image = await page.screenshot();
 
     // Vergleichen mit Referenz
-    expect(image).toMatchImageSnapshot();
+    expect(image).toMatchImageSnapshot({
+      failureThreshold: '0.01',
+      failureThresholdType: 'percent',
+    });
   });
 
   test('layout last page is correct', async () => {
@@ -58,6 +64,9 @@ describe('Pagination', () => {
     const image = await page.screenshot();
 
     // Vergleichen mit Referenz
-    expect(image).toMatchImageSnapshot();
+    expect(image).toMatchImageSnapshot({
+      failureThreshold: '0.01',
+      failureThresholdType: 'percent',
+    });
   });
 });
