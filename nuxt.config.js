@@ -1,8 +1,5 @@
 export default {
   mode: 'universal',
-  router: {
-    base: '/blog-example'
-  },
   /*
    ** Headers of the page
    */
