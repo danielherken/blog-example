@@ -12,7 +12,8 @@
     "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
     "lintfix": "eslint --fix --ext .js,.vue --ignore-path .gitignore .",
     "test": "jest",
-    "run-tests": "start-server-and-test start http://localhost:3000 test"
+    "run-tests": "start-server-and-test start http://localhost:3000 test",
+    "deploy": "push-dir --dir=.nuxt --branch=deployed"
   },
   "dependencies": {
     "@nuxtjs/axios": "^5.3.6",
@@ -40,6 +41,7 @@
     "jsdom": "^16.2.2",
     "prettier": "^2.0.5",
     "puppeteer": "^3.1.0",
+    "push-dir": "^0.4.1",
     "start-server-and-test": "^1.11.0",
     "vue-jest": "^4.0.0-0"
   }
